@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/deepblue/0-liuanqi/project/stereoVision'
+Compile depends CXX src/code.cpp
+ 
+echo Compile CXX src/code.cpp
+mkdir -p objs/
+g++ -c src/code.cpp -o objs/code.o -std=c++11 -fPIC -m64 -g -fopenmp -w -O0 -I~/0-liuanqi/lean/opencv/install//include/opencv2 -Ilibrary_paths -I:= -I~/0-liuanqi/lean/opencv/install//lib
+make: Leaving directory '/home/deepblue/0-liuanqi/project/stereoVision'
+ 
